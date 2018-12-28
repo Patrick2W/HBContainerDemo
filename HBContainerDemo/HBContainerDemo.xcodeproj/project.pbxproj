@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53F1A1C21D5BC510087BBA6 /* HBHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A1B21D5BC510087BBA6 /* HBHomeTableViewCell.m */; };
+		A53F1A2021D5C2480087BBA6 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53F1A1F21D5C2480087BBA6 /* city.plist */; };
+		A53F1A2721D5C5500087BBA6 /* HBRedPacketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A2621D5C5500087BBA6 /* HBRedPacketViewController.m */; };
+		A53F1A2A21D5CBF80087BBA6 /* HBProvinceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A2921D5CBF80087BBA6 /* HBProvinceViewController.m */; };
+		A53F1A2E21D5FADC0087BBA6 /* HBCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A2D21D5FADC0087BBA6 /* HBCityModel.m */; };
+		A53F1A3121D5FDE10087BBA6 /* HBCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A3021D5FDE10087BBA6 /* HBCityViewController.m */; };
+		A53F1A3621D604210087BBA6 /* HBCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F1A3521D604210087BBA6 /* HBCartViewController.m */; };
 		A5B4DB2E21D0D9160068292C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5B4DB1221D0D9160068292C /* Assets.xcassets */; };
 		A5B4DB2F21D0D9160068292C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B4DB1321D0D9160068292C /* LaunchScreen.storyboard */; };
 		A5B4DB3021D0D9160068292C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B4DB1521D0D9160068292C /* Main.storyboard */; };
@@ -18,10 +25,23 @@
 		A5B4DB3721D0D9160068292C /* HBContainerTransitioningContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4DB2A21D0D9160068292C /* HBContainerTransitioningContext.m */; };
 		A5B4DB3821D0D9160068292C /* HBContainerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4DB2B21D0D9160068292C /* HBContainerAnimation.m */; };
 		A5B4DB3921D0D9160068292C /* UIViewController+HBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B4DB2C21D0D9160068292C /* UIViewController+HBAdd.m */; };
-		A5B4DB3B21D0DC580068292C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B4DB3A21D0DC580068292C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A53F1A1A21D5BC510087BBA6 /* HBHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBHomeTableViewCell.h; sourceTree = "<group>"; };
+		A53F1A1B21D5BC510087BBA6 /* HBHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBHomeTableViewCell.m; sourceTree = "<group>"; };
+		A53F1A1F21D5C2480087BBA6 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		A53F1A2521D5C5500087BBA6 /* HBRedPacketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBRedPacketViewController.h; sourceTree = "<group>"; };
+		A53F1A2621D5C5500087BBA6 /* HBRedPacketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBRedPacketViewController.m; sourceTree = "<group>"; };
+		A53F1A2821D5CBF80087BBA6 /* HBProvinceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBProvinceViewController.h; sourceTree = "<group>"; };
+		A53F1A2921D5CBF80087BBA6 /* HBProvinceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBProvinceViewController.m; sourceTree = "<group>"; };
+		A53F1A2C21D5FADC0087BBA6 /* HBCityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBCityModel.h; sourceTree = "<group>"; };
+		A53F1A2D21D5FADC0087BBA6 /* HBCityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBCityModel.m; sourceTree = "<group>"; };
+		A53F1A2F21D5FDE10087BBA6 /* HBCityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBCityViewController.h; sourceTree = "<group>"; };
+		A53F1A3021D5FDE10087BBA6 /* HBCityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBCityViewController.m; sourceTree = "<group>"; };
+		A53F1A3421D604210087BBA6 /* HBCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBCartViewController.h; sourceTree = "<group>"; };
+		A53F1A3521D604210087BBA6 /* HBCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBCartViewController.m; sourceTree = "<group>"; };
+		A53F1A3821D61E270087BBA6 /* CheYunLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CheYunLocation.gpx; sourceTree = "<group>"; };
 		A5B4DAF821D0D7910068292C /* HBContainerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBContainerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B4DB1221D0D9160068292C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B4DB1421D0D9160068292C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +76,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A53F1A1921D5BC380087BBA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A1A21D5BC510087BBA6 /* HBHomeTableViewCell.h */,
+				A53F1A1B21D5BC510087BBA6 /* HBHomeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A53F1A1D21D5C1940087BBA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A3721D61DF90087BBA6 /* Gpx */,
+				A53F1A1E21D5C2480087BBA6 /* Plist */,
+				A5B4DB1221D0D9160068292C /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A53F1A1E21D5C2480087BBA6 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A1F21D5C2480087BBA6 /* city.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		A53F1A2121D5C5170087BBA6 /* RedPacket */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A2221D5C5170087BBA6 /* ViewController */,
+			);
+			path = RedPacket;
+			sourceTree = "<group>";
+		};
+		A53F1A2221D5C5170087BBA6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A2521D5C5500087BBA6 /* HBRedPacketViewController.h */,
+				A53F1A2621D5C5500087BBA6 /* HBRedPacketViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A53F1A2321D5C5170087BBA6 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A2B21D5FACA0087BBA6 /* Model */,
+				A53F1A2421D5C5170087BBA6 /* ViewController */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		A53F1A2421D5C5170087BBA6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A2821D5CBF80087BBA6 /* HBProvinceViewController.h */,
+				A53F1A2921D5CBF80087BBA6 /* HBProvinceViewController.m */,
+				A53F1A2F21D5FDE10087BBA6 /* HBCityViewController.h */,
+				A53F1A3021D5FDE10087BBA6 /* HBCityViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A53F1A2B21D5FACA0087BBA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A2C21D5FADC0087BBA6 /* HBCityModel.h */,
+				A53F1A2D21D5FADC0087BBA6 /* HBCityModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A53F1A3221D603DE0087BBA6 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A3321D603F50087BBA6 /* ViewController */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		A53F1A3321D603F50087BBA6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A3421D604210087BBA6 /* HBCartViewController.h */,
+				A53F1A3521D604210087BBA6 /* HBCartViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A53F1A3721D61DF90087BBA6 /* Gpx */ = {
+			isa = PBXGroup;
+			children = (
+				A53F1A3821D61E270087BBA6 /* CheYunLocation.gpx */,
+			);
+			path = Gpx;
+			sourceTree = "<group>";
+		};
 		A5B4DAEF21D0D7910068292C = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +193,9 @@
 		A5B4DAFA21D0D7910068292C /* HBContainerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A5B4DB2221D0D9160068292C /* HBContainer */,
 				A5B4DB1821D0D9160068292C /* Class */,
 				A5B4DB1121D0D9160068292C /* Support File */,
+				A53F1A1D21D5C1940087BBA6 /* Resource */,
 			);
 			path = HBContainerDemo;
 			sourceTree = "<group>";
@@ -86,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				A5B4DB3A21D0DC580068292C /* Info.plist */,
-				A5B4DB1221D0D9160068292C /* Assets.xcassets */,
 				A5B4DB1321D0D9160068292C /* LaunchScreen.storyboard */,
 				A5B4DB1521D0D9160068292C /* Main.storyboard */,
 			);
@@ -98,6 +215,7 @@
 			children = (
 				A5B4DB1921D0D9160068292C /* MainApp */,
 				A5B4DB1D21D0D9160068292C /* Modules */,
+				A5B4DB2221D0D9160068292C /* HBContainer */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -116,6 +234,9 @@
 			isa = PBXGroup;
 			children = (
 				A5B4DB1E21D0D9160068292C /* Home */,
+				A53F1A2321D5C5170087BBA6 /* City */,
+				A53F1A2121D5C5170087BBA6 /* RedPacket */,
+				A53F1A3221D603DE0087BBA6 /* Cart */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -123,6 +244,7 @@
 		A5B4DB1E21D0D9160068292C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A53F1A1921D5BC380087BBA6 /* View */,
 				A5B4DB1F21D0D9160068292C /* ViewController */,
 			);
 			path = Home;
@@ -214,8 +336,8 @@
 			files = (
 				A5B4DB3021D0D9160068292C /* Main.storyboard in Resources */,
 				A5B4DB2E21D0D9160068292C /* Assets.xcassets in Resources */,
+				A53F1A2021D5C2480087BBA6 /* city.plist in Resources */,
 				A5B4DB2F21D0D9160068292C /* LaunchScreen.storyboard in Resources */,
-				A5B4DB3B21D0DC580068292C /* Info.plist in Resources */,
 				A5B4DB3521D0D9160068292C /* HBContainer.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,13 +349,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53F1A3621D604210087BBA6 /* HBCartViewController.m in Sources */,
 				A5B4DB3821D0D9160068292C /* HBContainerAnimation.m in Sources */,
 				A5B4DB3721D0D9160068292C /* HBContainerTransitioningContext.m in Sources */,
 				A5B4DB3421D0D9160068292C /* ViewController.m in Sources */,
 				A5B4DB3921D0D9160068292C /* UIViewController+HBAdd.m in Sources */,
+				A53F1A2A21D5CBF80087BBA6 /* HBProvinceViewController.m in Sources */,
 				A5B4DB3321D0D9160068292C /* AppDelegate.m in Sources */,
 				A5B4DB3221D0D9160068292C /* main.m in Sources */,
+				A53F1A3121D5FDE10087BBA6 /* HBCityViewController.m in Sources */,
+				A53F1A1C21D5BC510087BBA6 /* HBHomeTableViewCell.m in Sources */,
 				A5B4DB3621D0D9160068292C /* HBContainerController.m in Sources */,
+				A53F1A2721D5C5500087BBA6 /* HBRedPacketViewController.m in Sources */,
+				A53F1A2E21D5FADC0087BBA6 /* HBCityModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

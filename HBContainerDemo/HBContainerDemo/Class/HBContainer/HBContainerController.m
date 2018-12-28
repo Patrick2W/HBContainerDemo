@@ -27,6 +27,7 @@
     self = [super init];
     if (self) {
         _rootViewController = rootViewController;
+        _rootViewController.containerController = self;
     }
     return self;
 }

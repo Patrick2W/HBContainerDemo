@@ -39,7 +39,7 @@
 
 - (void)setContainerController:(HBContainerController *)containerController {
     
-    objc_setAssociatedObject(self, @selector(containerController), containerController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(containerController), containerController, OBJC_ASSOCIATION_ASSIGN);
 }
 
 - (HBContainerController *)containerController {
