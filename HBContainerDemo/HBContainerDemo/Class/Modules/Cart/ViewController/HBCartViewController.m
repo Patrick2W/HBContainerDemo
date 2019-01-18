@@ -9,20 +9,15 @@
 #import "HBCartViewController.h"
 #import "HBContainer.h"
 
+
+#define Random255 (arc4random_uniform(256)/255.0)
+#define RandomColor [UIColor colorWithRed:Random255 green:Random255 blue:Random255 alpha:1]
+
+
+
 @interface HBCartViewController ()
 
-@property (strong, nonatomic) UIView *infoView;
-@property (strong, nonatomic) UIImageView *imageView;
-@property (strong, nonatomic) UILabel *priceLabel;
-@property (strong, nonatomic) UILabel *numberLabel;
-@property (strong, nonatomic) UILabel *colorLabel;
-
-@property (strong, nonatomic) UIScrollView *contentView;
-@property (strong, nonatomic) UILabel *colorTitleLabel;
-
-@property (strong, nonatomic) UIButton *button;
-
-@property (assign, nonatomic) BOOL pulled;
+@property (strong, nonatomic) UIButton *nextButton;
 
 @end
 
@@ -42,56 +37,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = RandomColor;
     
-    self.infoView = [[UIView alloc] init];
-    self.imageView = [[UIImageView alloc] init];
-    self.priceLabel = [[UILabel alloc] init];
-    self.numberLabel = [[UILabel alloc] init];
-    self.colorLabel = [[UILabel alloc] init];
-    [self.infoView addSubview:self.imageView];
-    [self.infoView addSubview:self.priceLabel];
-    [self.infoView addSubview:self.numberLabel];
+    self.nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.nextButton.backgroundColor = RandomColor;
+    [self.nextButton addTarget:self action:@selector(goNext) forControlEvents:UIControlEventTouchUpInside];
     
-    self.contentView = [[UIScrollView alloc] init];
-    self.colorTitleLabel = [[UILabel alloc] init];
-    
-    self.button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.button setBackgroundColor:[UIColor yellowColor]];
-    
-    [self.view addSubview:self.infoView];
-    [self.view addSubview:self.contentView];
-    [self.view addSubview:self.button];
-    
-    self.infoView.backgroundColor = [UIColor blueColor];
-    self.contentView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.nextButton];
 }
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    
-    [self updateFrame];
+    CGSize size = self.view.frame.size;
+    self.nextButton.frame = CGRectMake(size.width / 2.0 - 25, size.height / 2.0 - 25, 50, 50);
 }
-
-- (void)updateFrame {
-    
-    CGFloat infoHeight = 80;
-    CGSize mainSize = self.view.frame.size;
-    self.infoView.frame = CGRectMake(0, 0, mainSize.width, infoHeight);
-    self.button.frame = CGRectMake(10, mainSize.height - 55, mainSize.width - 20, 45);
-    
-    CGFloat contentH = self.button.frame.origin.y - infoHeight;
-    self.contentView.frame = CGRectMake(0, infoHeight, mainSize.width, contentH);
-}
-
-//- (CGSize)hb_contentSize {
-//    CGSize mainSize = [UIScreen mainScreen].bounds.size;
-//    return CGSizeMake(mainSize.width, 400);
-//}
 
 - (UIEdgeInsets)hb_contenteEdges {
-    CGSize mainSize = [UIScreen mainScreen].bounds.size;
-    return UIEdgeInsetsMake(mainSize.height - 450, 0, 0, 0);
+    
+    return UIEdgeInsetsMake(100, 0, 0, 0);
+}
+
+- (void)goNext {
+    [self.class showCartPage:self];
 }
 
 @end

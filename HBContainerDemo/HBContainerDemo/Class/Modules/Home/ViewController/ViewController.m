@@ -24,9 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor redColor];
+    
     self.title = [UIDevice currentDevice].name;
-    self.titles = @[@"抽红包了", @"城市选择", @"加入购物车"];
+    self.titles = @[@"抽红包了", @"城市选择", @"多级弹窗", @"城市选择Push"];
     self.tableView.tableFooterView = [UIView new];
+    
+    UINavigationBar *navBar = self.navigationController.navigationBar;
+    [navBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 }
 
 
@@ -65,6 +70,9 @@
     } else if (row == 2) {
         
         [HBCartViewController showCartPage:self];
+    } else if (row == 3) {
+        HBProvinceViewController *vc = [[HBProvinceViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
 }
