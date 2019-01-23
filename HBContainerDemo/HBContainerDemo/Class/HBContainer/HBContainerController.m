@@ -15,7 +15,6 @@
 @property (assign, nonatomic) HBContainerPresentAnimationStyle presentAnimationStyle;
 @property (assign, nonatomic) HBContainerDismissAnimationStyle dismissAnimationStyle;
 
-@property (strong, nonatomic) NSArray *superConstraints;
 @property (strong, nonatomic) NSArray *currentConstraints;
 @property (strong, nonatomic) NSArray *contentConstraints;
 
@@ -78,10 +77,6 @@
 
 - (void)remakeConstraints {
     
-    if (self.superConstraints.count > 0) {
-        [self.view.superview removeConstraints:self.superConstraints];
-        self.superConstraints = @[];
-    }
     if (self.currentConstraints.count > 0) {
         [self.view removeConstraints:self.currentConstraints];
         self.contentConstraints = @[];
@@ -91,13 +86,7 @@
         self.contentConstraints = @[];
     }
     
-    self.view.translatesAutoresizingMaskIntoConstraints = NO;
     self.rootViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    self.superConstraints = [self constraintsWithItem:self.view
-                                               toItem:self.view.superview
-                                         contentEdges:UIEdgeInsetsZero];
-    [self.view.superview addConstraints:self.superConstraints];
     
     if (!CGSizeEqualToSize(CGSizeZero, self.rootViewController.hb_contentSize)) {
         
